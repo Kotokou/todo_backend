@@ -16,3 +16,7 @@ class TodoList(models.Model):
     name = models.CharField(max_length=255)
     create_at = models.DateTimeField(default=timezone.now)
     update_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = "Todo List"
+        verbose_name_plural = "Todo Lists"
